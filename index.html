@@ -9,18 +9,32 @@
   <body>
     <div id="weatherCard">
       <div id="searchBar">
-        <input type="text" id="search" />
+        <input type="text" id="search" placeholder="Enter City..." />
         <button id="searchButton">
-          <img src="images/search icon copy.png" />
+          <img id="searchImg" src="images/Search.png" />
         </button>
       </div>
       <div id="weather">
-        <div id="city"></div>
+        <!--
         <div id="weatherType"></div>
-
+        -->
+        <img src="" id="weatherIcon" />
         <div id="temp"></div>
-        <div id="humidity"></div>
-        <div id="wind"></div>
+        <div id="city"></div>
+
+        <div id="details">
+          <div id="humiditySection">
+            <img id="humidityIcon" src="images/humidity.png" alt="humidity" />
+            <div id="humidity"></div>
+            <div id="humidityTitle">Humidity</div>
+          </div>
+
+          <div id="windSection">
+            <img id="windicon" src="images/wind.png" alt="wind" />
+            <div id="wind"></div>
+            <div id="windspeed">Wind Speed</div>
+          </div>
+        </div>
       </div>
     </div>
 

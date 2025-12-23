@@ -1,0 +1,104 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+#weatherCard {
+  width: 350px;
+  height: 500px;
+  justify-items: center;
+  align-content: center;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  color: aliceblue;
+  background: linear-gradient(rgb(5, 182, 182), rgb(122, 49, 190));
+}
+
+input {
+  height: 40px;
+  border-radius: 50px;
+  margin: 5px;
+  padding-left: 10px;
+  width: 200px;
+}
+
+#searchBar {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+#searchButton {
+  height: 48px;
+  width: 48px;
+  border-radius: 100px;
+  margin: px;
+  background: none;
+  background-color: white;
+}
+#searchImg {
+  height: 30px;
+  border-radius: 100px;
+  transform: translateX(-4px);
+}
+
+#weatherIcon {
+  height: 150px;
+}
+#temp {
+  font-size: 3rem;
+  font-weight: bold;
+  width: 100%;
+}
+#city {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#details {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+#windSection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  justify-content: center;
+  margin: 10px;
+}
+
+#windicon {
+  height: 20px;
+  padding-right: 5px;
+}
+
+#windspeed {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+#humiditySection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  justify-content: center;
+  margin: 10px;
+}
+
+#humidityIcon {
+  height: 20px;
+  padding-right: 5px;
+}
+
+#humidityTitle {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+#weather {
+  text-align: center;
+}
