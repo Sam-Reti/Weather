@@ -5,13 +5,16 @@ const search = document.getElementById("search");
 const searchButton = document.getElementById("searchButton");
 const weatherIcon = document.getElementById("weatherIcon");
 
+document.getElementById("details").style.display = "none";
+
 searchButton.addEventListener("click", () => {
-  let city = document.createElement("span");
-  city.textContent = search.value;
+  const splitName = search.value.split(",");
+  const city = splitName[0].trim();
+  const state = splitName[1].trim().toUpperCase();
 
   async function checkWeather() {
     const responce = await fetch(
-      apiUrl + `&q=${search.value}` + `&appid=${apiKey}`
+      `${apiUrl}&q=${encodeURIComponent(`${city},${state},US`)}&appid=${apiKey}`
     );
 
     let data = await responce.json();
@@ -37,6 +40,8 @@ searchButton.addEventListener("click", () => {
     } else if (data.weather[0].main == "Snow") {
       weatherIcon.src = "images/snow.png";
     }
+
+    document.getElementById("details").style.display = "flex";
 
     console.log(data);
   }
